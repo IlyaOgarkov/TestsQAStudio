@@ -1,7 +1,7 @@
+@pytest.mark.regression
 def test_sound_button(page_opener):
     page = page_opener
 
-    @pytest.mark.regression
     sound_button = page.locator('[id="rec803921749"]')
     assert sound_button.is_visible(), "Кнопка звука не найдена на странице"
 
