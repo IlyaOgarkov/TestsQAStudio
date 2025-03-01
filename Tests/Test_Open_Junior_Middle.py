@@ -1,8 +1,8 @@
+@pytest.mark.regression
 def test_open_junior_middle(page_opener):
 
     page = page_opener
 
-    @pytest.mark.regression
     buttonjunior = page.locator('[id="tab1_568115906"]')
     assert buttonjunior.get_attribute('aria-selected') == 'true', 'Кнопка База активна'
 
