@@ -1,3 +1,4 @@
+@pytest.mark.smoke
 def test_open_main_page(page_opener):
         
     page = page_opener
