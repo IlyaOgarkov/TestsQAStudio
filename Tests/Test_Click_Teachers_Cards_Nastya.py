@@ -1,7 +1,7 @@
 def test_click_teachers_cards_nastya(page_opener):
     page = page_opener
 
-    @pytest.marker.regression
+    @pytest.mark.regression
     nastya = page.locator('[src="https://static.tildacdn.com/tild6635-3630-4237-b339-313035623266/5026.jpg"]')
     assert nastya.is_visible(), "Изображение Анастасии Чичериной не видно"
     nastya.click()
