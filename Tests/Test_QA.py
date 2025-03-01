@@ -1,3 +1,4 @@
+@pytest.mark.regression
 def test_qa(page_opener):
     
     page = page_opener
