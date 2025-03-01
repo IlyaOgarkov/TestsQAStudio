@@ -1,3 +1,4 @@
+@pytest.mark.regression
 def test_project_site_link(page_opener):
     page = page_opener
 
