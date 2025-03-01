@@ -1,6 +1,7 @@
 def test_conditions_link(page_opener):
     page = page_opener
 
+    @pytest.marker.regression
     conlink = page.locator('text="Подробные условия"')
     assert conlink.is_visible(), 'Текста Подробные условия не видно'
     conlink.click()
