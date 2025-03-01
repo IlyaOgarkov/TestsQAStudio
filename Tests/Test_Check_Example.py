@@ -1,7 +1,7 @@
 def test_check_example(page_opener):
     page = page_opener
 
-    @pytest.marker.regression
+    @pytest.mark.regression
     checkex = page.locator('text="Cмотреть пример"')
     assert checkex.is_visible(), 'Надписи Смотреть пример не видно'
 
