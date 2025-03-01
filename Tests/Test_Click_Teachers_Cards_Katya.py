@@ -1,7 +1,7 @@
+@pytest.mark.regression
 def test_click_teachers_cards_katya(page_opener):
     page = page_opener
 
-    @pytest.mark.regression
     frontbutton = page.locator('[class="swiper-button__next"]')
     assert frontbutton.get_attribute('aria-disabled') == 'false', 'Кнопка Вперед неактивна'
     frontbutton.click()
